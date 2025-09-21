@@ -51,3 +51,48 @@ section, header{
     border-radius: 5px;
     padding: 6px 12px;
 }
+
+.shadow-img {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.carousel-index .carousel-item img{
+    height: 450px;
+    width: 750px;
+    object-fit: cover;
+}
+
+.card .col-auto img {
+  height: 100%;
+  object-fit: cover; /* corta proporcionalmente */
+  border-radius: 0 .5rem .5rem 0; /* mantém só a borda direita arredondada */
+}
+
+.data-jogo{
+    text-decoration: none;
+}
+
+.shadow-img-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.shadow-img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shadow-img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* cobre toda a imagem */
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
