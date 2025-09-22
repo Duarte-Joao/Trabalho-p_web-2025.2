@@ -96,3 +96,19 @@ section, header{
   inset: 0; /* cobre toda a imagem */
   background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
 }
+
+.titulo-sobre{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #014501, #0F6232);
+    color:white;
+}
+.header-sobre{
+    background-color: #0F6232 ;
+}
+.jogador{
+    background: linear-gradient(to bottom, #014501, #0F6232);
+    color:white;
+}
